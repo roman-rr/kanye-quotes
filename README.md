@@ -1,5 +1,5 @@
 # Kanye quotes generator
-High-scallabale mobile-friendly laravel platform with Auth, RESTFul API, Metronic theme, Livewire, and many more ...
+Highly scalable, mobile-friendly Laravel platform with authentication, RESTful API, Metronic theme integration, Livewire, comprehensive tests, and more.
 
 ## Dev Installation
 
