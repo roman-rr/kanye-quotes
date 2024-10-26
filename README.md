@@ -65,5 +65,5 @@ sail artisan test --testsuite=Api // Api tests
 - Composer 2+
 - PHP 8+
  
- ## Code notes
- Might containe some components from mine previous projects to save time
+### Notes
+**Might contain some components from mine previous projects to save time**
