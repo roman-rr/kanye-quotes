@@ -5,6 +5,7 @@ High-scallabale mobile-friendly laravel platform with Auth, RESTFul API, Metroni
 
 ### Run image
 ```bash
+cd kanye-quotes
 composer install
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail' // alias for sail may be globally exported once
 cp .env.example .env
