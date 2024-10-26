@@ -1,0 +1,132 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "OpenAPI Documentation",
+        "version": "1.0"
+    },
+    "paths": {
+        "/api/kanye/quote": {
+            "get": {
+                "tags": [
+                    "Quotes"
+                ],
+                "summary": "Get a random Kanye West quote",
+                "description": "Returns a random Kanye West quote",
+                "operationId": "getRandomKanyeQuote",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    }
+                }
+            }
+        },
+        "/api/kanye/quotes/{limit}": {
+            "get": {
+                "tags": [
+                    "Quotes"
+                ],
+                "summary": "Get multiple Kanye West quotes",
+                "description": "Returns multiple Kanye West quotes with an optional limit",
+                "operationId": "getMultipleKanyeQuotes",
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "path",
+                        "description": "Number of quotes to return",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "parameters": {
+            "queryset--page": {
+                "name": "page",
+                "in": "query",
+                "description": "Page number *(Default: 1)*",
+                "required": false,
+                "schema": {
+                    "type": "integer"
+                }
+            },
+            "queryset--length": {
+                "name": "length",
+                "in": "query",
+                "description": "Length of items per page *(Default: 15)*",
+                "required": false,
+                "schema": {
+                    "type": "integer"
+                }
+            },
+            "queryset--search_query": {
+                "name": "search_query",
+                "in": "query",
+                "description": "Search query to apply for models",
+                "required": false,
+                "schema": {
+                    "type": "string"
+                }
+            },
+            "queryset--order_by": {
+                "name": "order_by",
+                "in": "query",
+                "description": "Order by model field",
+                "required": false,
+                "schema": {
+                    "type": "string"
+                },
+                "example": "created_at"
+            },
+            "queryset--order_dir": {
+                "name": "order_dir",
+                "in": "query",
+                "description": "Direction for ordering",
+                "required": false,
+                "schema": {
+                    "type": "string"
+                },
+                "examples": {
+                    "asc": {
+                        "summary": "ASC ordering",
+                        "value": "asc"
+                    },
+                    "desc": {
+                        "summary": "DESC ordering",
+                        "value": "desc"
+                    }
+                }
+            },
+            "queryset--model_type": {
+                "name": "model_type",
+                "in": "query",
+                "description": "Model type for polymorphic relationship",
+                "required": true,
+                "schema": {
+                    "type": "string"
+                },
+                "examples": {
+                    "Post": {
+                        "summary": "Morph to Post model",
+                        "value": "post"
+                    },
+                    "Campaign": {
+                        "summary": "Morph to Campaign model",
+                        "value": "campaign"
+                    }
+                }
+            }
+        }
+    },
+    "security": [
+        []
+    ]
+}

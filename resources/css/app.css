@@ -1,0 +1,7 @@
+/**
+ * MAIN APP CSS BUNDLE
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
