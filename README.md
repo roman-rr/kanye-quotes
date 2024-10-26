@@ -20,7 +20,7 @@ alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 sail artisan migrate:refresh --seed
 ```
 
-*Congrats! 🎉 *
+Congrats! 🎉
 App running on: http://localhost:80
 Login using `demo:password` or sign up
 
@@ -32,7 +32,7 @@ Login using `demo:password` or sign up
 
 ## Manual RESTFul test
 **RESTFul Endpoints required a valid user token passed withing header**
-```json
+```bash
 'Authorization': 'Bearer ' + YOUR_API_TOKEN_HER
 'Accept': 'application/json'
 ```
