@@ -9,8 +9,7 @@ cd kanye-quotes
 composer install
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail' // alias for sail may be globally exported once
 cp .env.example .env
-npm install
-npm run build
+npm install && npm run build
 sail up -d // -d flag for background running**
 ```
 
