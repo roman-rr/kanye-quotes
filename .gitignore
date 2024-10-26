@@ -16,11 +16,6 @@ yarn-error.log
 /.idea
 /.vscode
 .DS_Store
-
-/resources-playground
-!/resources-playground/views
-docker-compose.yml
 storage/logs/laravel.log
 composer.lock
-docker-compose.yml
 storage/logs/laravel.log
