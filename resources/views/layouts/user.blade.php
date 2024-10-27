@@ -3,7 +3,7 @@
 <!--begin::Head-->
 <head>
     <base href="../../../"/>
-    <title>Social Post</title>
+    <title>Kanye Quotes</title>
     <meta charset="utf-8" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
