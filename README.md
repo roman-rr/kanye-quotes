@@ -7,11 +7,13 @@ Highly scalable, mobile-friendly Laravel platform with authentication, RESTful A
 ```bash
 cd kanye-quotes
 composer install
-alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail' // alias for sail may be globally exported once
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 cp .env.example .env
 npm install && npm run build
-sail up -d // -d flag for background running**
+sail up -d
 ```
+**alias for sail may be globally exported once**
+**-d flag for background running**
 
 ### Seed DB
 **Note: Docker image must be already running to apply migrations**
